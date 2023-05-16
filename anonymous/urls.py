@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('core/', include('core.urls')),
     path('', include('dj_rest_auth.urls')),
-    path('registration/', include('dj_rest_auth.registration.urls'))
+    path('registration/', include('dj_rest_auth.registration.urls')),
+    path('account/', include('allauth.urls')),
+    path('messages/', include('message.urls')),
 ]
